@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/estilo.css">
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+
+    <h1>{{ Titulo }}</h1>
+     {% for cafe in lista %}
+        <div class="card">
+            <h3>{{cafe[3]}}</h3>
+            <img class='imgcarduau' src="../static/uau.jpg">
+            <p>Marca: {{ cafe[0] }}</p>
+            <p>Tipo: {{ cafe[1] }}</p>
+            <p>Peso: {{ cafe[2] }}</p>
+        </div>
+     {% endfor %}
+    <div>
+        <a class='btn-volta' href="/">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>
